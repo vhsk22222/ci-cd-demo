@@ -1,5 +1,165 @@
-<h1>Welcome to TripNTrip - Version 2</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>Deployed via AWS CodePipeline</p>
+<title>TripNTrip</title>
 
-<p>Deployment Time Test</p>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:34px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+.hero{
+    height:500px;
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,.55);
+    color:white;
+    padding:50px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.overlay h2{
+    font-size:60px;
+}
+
+.overlay p{
+    font-size:24px;
+    margin-top:15px;
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:20px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>TripNTrip</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Destinations</a>
+<a href="#">Packages</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay">
+
+<h2>TripNTrip</h2>
+
+<p>We make your travel better.</p>
+
+<p>Discover amazing destinations around the world.</p>
+
+<a href="#" class="btn">Plan Your Trip</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>✈ Flights</h3>
+<p>Compare and book flights at the best prices.</p>
+</div>
+
+<div class="card">
+<h3>🏨 Hotels</h3>
+<p>Find hotels that suit every budget.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Holiday Packages</h3>
+<p>Complete vacation packages with exciting offers.</p>
+</div>
+
+</section>
+
+<footer>
+
+© 2026 TripNTrip | Built using AWS CodePipeline + CodeDeploy
+
+</footer>
+
+</body>
+</html>
