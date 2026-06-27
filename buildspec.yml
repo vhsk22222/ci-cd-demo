@@ -1,10 +1,23 @@
 version: 0.2
 
 phases:
+
+  install:
+    commands:
+      - echo "Installing Build Environment"
+
+  pre_build:
+    commands:
+      - echo "Running Validation"
+
   build:
     commands:
-      - echo "Build started"
+      - echo "Packaging Application"
+
+  post_build:
+    commands:
+      - echo "Build Completed Successfully"
+
 artifacts:
   files:
     - '**/*'
-
